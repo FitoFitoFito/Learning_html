@@ -14,10 +14,43 @@ hr {
     width: 50%;
 }
 
-img {
+.meme{
     border-radius:100px; 
     margin: 24px;
 }
+
+
+button{
+    background-color: brown;
+    cursor: pointer;
+}
+button:hover {
+    background-color: yellow;
+    -webkit-box-shadow: 35px 53px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 35px 53px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 35px 53px 5px 0px rgba(0,0,0,0.75);
+    transform: rotate(360deg);
+    transition: 5s;
+}
+
+#aloha {
+    background-color: antiquewhite;
+}
+
+.card .container span{
+    font: rgb(22, 197, 52);
+}
+
+.card{
+    background-color: aqua;
+    width: 150px;
+}
+
+
+
+
+
+
 
 /*CSS Portfolio*/
 input[type=text] {
