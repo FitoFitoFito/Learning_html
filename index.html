@@ -1,61 +1,91 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yosie´s Web</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+    
+    <!-- Bootstrap Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    
 </head>
 <body>
-    <!-- foto y nombre -->
-    <table>
-        <tr>
-            <td>
-                <img class="meme" width="200px" src="meme.jpeg" alt="">
-            </td>
-            <td>
-                <h1>🍤 Portfolio de Yosie🍤</h1>
-                <h2>Diseños chachis</h2>
-                <h2>
-                    Pincha <a href="portfolio.html">aquí</a> para ver los super diseños
-                </h2>
-            </td>
-        </tr>
-    </table>
-    <!-- /foto y nombre -->
 
-    <hr size="5px">
+    <header class="d-flex flex-wrap justify-content-center py-3 px-4 mb-4 border-bottom fixed-top" style="background-color: #e3f2fd;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          
+            <span class="fs-4">Max's Portfolio</span>
+        </a>
+  
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </header>
 
-    <h3>Cositas que se hacer</h3>
-    <ol>
-        <li id="aloha">Hacer el pino</li>
-        <li>Macarrones con queso</li>
-        <li>Pasear</li>
-    </ol>
-    <hr size="5px">
-
-    <h3>Cositas que se hacer</h3>
-    <ol>
-        <li>Hacer el pino</li>
-        <li>Macarrones con queso</li>
-        <li>Pasear</li>
-    </ol>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/150" alt="">
-        <div class="container">
-            <h4>
-                Elena Gradientes
-            </h4>
-            <p>
-                Tus <span>gradientes</span> personalizados
-            </p>
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="meme.jpeg" alt="" width="80" height="80">
+        <i class="bi bi-boxes fs-1"></i>
+        <h1 class="display-5 fw-bold">Rodolfo is a 3D animator and graphic designer</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+          </div>
         </div>
+      </div>
 
-    </div>
+    <!-- Features boostrap -->
+      <div class="container">
+        <!-- <h2 class="pb-2 border-bottom">Columns with icons</h2> -->
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+            </div>
+            <h2>Diseño de personajes</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+            </div>
+            <h2>Animaciones 3D</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+            </div>
+            <h2>Diseño de niveles</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
 
-    <button>Guardar</button>
-    <button>Cancelar</button>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
 </body>
 </html>
